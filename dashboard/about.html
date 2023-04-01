@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <title>Medico</title>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+
+    <link
+      href="vendor/fontawesome-free/css/all.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+      rel="stylesheet"
+    />
+
+    <link href="css/sb-admin-2.min.css" rel="stylesheet" />
+  </head>
+
+  <body id="page-top">
+    <div id="wrapper">
+      <ul
+        class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion"
+        id="accordionSidebar"
+      >
+        <a
+          class="sidebar-brand d-flex align-items-center justify-content-center"
+          href="index.html"
+        >
+          <div class="sidebar-brand-icon rotate-n-15">
+            <i class="fas fa-fw fa-stethoscope"></i>
+          </div>
+          <div class="sidebar-brand-text mx-3">Medico</div>
+        </a>
+
+        <hr class="sidebar-divider my-0" />
+
+        <li class="nav-item">
+          <a class="nav-link" href="dashboard.html">
+            <i class="fas fa-fw fa-tachometer-alt"></i>
+            <span>Dashboard</span></a
+          >
+        </li>
+
+        <hr class="sidebar-divider" />
+
+        <div class="sidebar-heading"></div>
+        <li class="nav-item">
+          <a class="nav-link" href="appointments.html">
+            <i class="fas fa-fw fa-calendar-check"></i>
+            <span>Appointments</span></a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="doctors.html">
+            <i class="fas fa-fw fa-comment"></i>
+            <span>Doctors</span></a
+          >
+        </li>
+
+        <hr class="sidebar-divider" />
+
+        <div class="sidebar-heading"></div>
+
+        <li class="nav-item">
+          <a class="nav-link" href="chats.html">
+            <i class="fas fa-fw fa-comment"></i>
+            <span>Chat</span></a
+          >
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="blogs.html">
+            <i class="fas fa-fw fa-blog"></i>
+            <span>Blogs</span></a
+          >
+        </li>
+        <li class="nav-item">
+                <a class="nav-link" href="community.html">
+                    <i class="fas fa-fw fa-users"></i>
+                    <span>Community</span></a>
+            </li>
+          <li class="nav-item active">
+                <a class="nav-link" href="about.html">
+                   <i class="fas fa-fw fa-stethoscope"></i>
+                    <span>About</span></a>
+            </li>
+
+        <hr class="sidebar-divider d-none d-md-block" />
+
+        <div class="text-center d-none d-md-inline">
+          <button class="rounded-circle border-0" id="sidebarToggle"></button>
+        </div>
+      </ul>
+
+      <div id="content-wrapper" class="d-flex flex-column">
+        <div id="content">
+          <nav
+            class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow"
+          >
+            <button
+              id="sidebarToggleTop"
+              class="btn btn-link d-md-none rounded-circle mr-3"
+            >
+              <i class="fa fa-bars"></i>
+            </button>
+
+            <ul class="navbar-nav ml-auto">
+              <li class ="nav-item mx-1">
+               <a href="#" class="btn text-mute mt-3 h6">हिन्दी</a>
+              </li>
+              <li class="nav-item dropdown no-arrow d-sm-none">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="searchDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  <i class="fas fa-search fa-fw"></i>
+                </a>
+                <div
+                  class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in"
+                  aria-labelledby="searchDropdown"
+                >
+                  <form class="form-inline mr-auto w-100 navbar-search">
+                    <div class="input-group">
+                      <input
+                        type="text"
+                        class="form-control bg-light border-0 small"
+                        placeholder="Search for..."
+                        aria-label="Search"
+                        aria-describedby="basic-addon2"
+                      />
+                      <div class="input-group-append">
+                        <button class="btn btn-primary" type="button">
+                          <i class="fas fa-search fa-sm"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </li>
+
+              <li class="nav-item dropdown no-arrow mx-1">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="alertsDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  <i class="fas fa-bell fa-fw"></i>
+                  <span class="badge badge-danger badge-counter">2+</span>
+                </a>
+                <div
+                  class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                  aria-labelledby="alertsDropdown"
+                >
+                  <h6 class="dropdown-header">Alerts</h6>
+                  <a class="dropdown-item d-flex align-items-center" href="#">
+                    <div class="mr-2">
+                      <div class="icon-circle bg-primary">
+                        <i class="fas fa-file-alt text-white"></i>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="small text-gray-500">April 10, 2022</div>
+                      <span class="font-weight-bold"
+                        >Meet scheduled with Dr Rajput</span
+                      >
+                    </div>
+                  </a>
+                  <a class="dropdown-item d-flex align-items-center" href="#">
+                    <div class="mr-2">
+                      <div class="icon-circle bg-success">
+                        <i class="fas fa-donate text-white"></i>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="small text-gray-500">April 9, 2022</div>
+                      $50 deposited in your account!
+                    </div>
+                  </a>
+                  <a
+                    class="dropdown-item text-center small text-gray-500"
+                    href="#"
+                    >Show All Alerts</a
+                  >
+                </div>
+              </li>
+
+              <li class="nav-item dropdown no-arrow mx-1">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="messagesDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  <i class="fas fa-envelope fa-fw"></i>
+                  <span class="badge badge-danger badge-counter">3</span>
+                </a>
+                <div
+                  class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                  aria-labelledby="messagesDropdown"
+                >
+                  <h6 class="dropdown-header">Messages</h6>
+                  <a class="dropdown-item d-flex align-items-center" href="#">
+                    <div class="dropdown-list-image mr-3">
+                      <img
+                        class="rounded-circle"
+                        src="img/undraw_profile_1.svg"
+                        alt="..."
+                      />
+                      <div class="status-indicator bg-success"></div>
+                    </div>
+                    <div class="font-weight-bold">
+                      <div class="text-truncate">
+                        Hello. Can you help we a problem I am facing?
+                      </div>
+                      <div class="small text-gray-500">Ayushi · 30m</div>
+                    </div>
+                  </a>
+                  <a class="dropdown-item d-flex align-items-center" href="#">
+                    <div class="dropdown-list-image mr-3">
+                      <img
+                        class="rounded-circle"
+                        src="img/undraw_profile_2.svg"
+                        alt="..."
+                      />
+                      <div class="status-indicator"></div>
+                    </div>
+                    <div>
+                      <div class="text-truncate">
+                        How should I share the photos that you asked for
+                        yesterday
+                      </div>
+                      <div class="small text-gray-500">Steve · 1d</div>
+                    </div>
+                  </a>
+                  <a class="dropdown-item d-flex align-items-center" href="#">
+                    <div class="dropdown-list-image mr-3">
+                      <img
+                        class="rounded-circle"
+                        src="img/undraw_profile_3.svg"
+                        alt="..."
+                      />
+                      <div class="status-indicator bg-warning"></div>
+                    </div>
+                    <div>
+                      <div class="text-truncate">
+                        Last month's reports looks great. Keep up the good work!
+                      </div>
+                      <div class="small text-gray-500">Radha · 2d</div>
+                    </div>
+                  </a>
+                  <a
+                    class="dropdown-item text-center small text-gray-500"
+                    href="#"
+                    >Read More Messages</a
+                  >
+                </div>
+              </li>
+
+              <div class="topbar-divider d-none d-sm-block"></div>
+
+              <li class="nav-item dropdown no-arrow">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="userDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  <span class="mr-2 d-none d-lg-inline text-gray-600 small"
+                    >Dhruv</span
+                  >
+                  <img
+                    class="img-profile rounded-circle"
+                    src="img/undraw_profile.svg"
+                  />
+                </a>
+                <div
+                  class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                  aria-labelledby="userDropdown"
+                >
+                  <a class="dropdown-item" href="#">
+                    <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
+                    Profile
+                  </a>
+                  <a class="dropdown-item" href="#">
+                    <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
+                    Settings
+                  </a>
+                  <a class="dropdown-item" href="#">
+                    <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
+                    Activity Log
+                  </a>
+                  <div class="dropdown-divider"></div>
+                  <a
+                    class="dropdown-item"
+                    href="#"
+                    data-toggle="modal"
+                    data-target="#logoutModal"
+                  >
+                    <i
+                      class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"
+                    ></i>
+                    Logout
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </nav>
+          <nav class="navbar navbar-expand-lg navbar-light bg-light py-3">
+           <div class="container"><a href="#" class="navbar-brand d-flex align-items-center"> <i class="fa fa-snowflake-o fa-lg text-primary mr-2"></i></a>
+    
+  </div>
+</nav>
+
+<div class="bg-light">
+  <div class="container py-5">
+    <div class="row h-100 align-items-center py-5">
+      <div class="col-lg-6 primary">
+        <h1>Medico</h1>
+        <p class="lead text-muted mb-0">One Stop Solution for Healthcare</p>
+        <p class="lead text-muted">Done by <a href="#" class="text-muted"> 
+                    <u>Fuzzy logic</u></a>
+        </p>
+      </div>
+      <div class="col-lg-6 d-none d-lg-block"><img src="img/undraw_medical_1.svg" alt="" class="img-fluid"></div>
+    </div>
+  </div>
+</div>
+
+<div class="bg-white py-5">
+  <div class="container py-5">
+    <div class="row align-items-center mb-5">
+      <div class="col-lg-6 order-2 order-lg-1"><i class="fa fa-bar-chart fa-2x mb-3 text-primary"></i>
+        <h2 class="font-weight-light">About Us</h2>
+        <p class="font-italic text-muted mb-4">Fuzzy logic is a group of four young minds from four different regions of India connected virtually to build progressive healtcare solution to cater to the rural population.</p>
+      </div>
+      <div class="col-lg-5 px-5 mx-auto order-1 order-lg-2"><img src="img/undraw_medical_2.svg" alt="" class="img-fluid mb-4 mb-lg-0"></div>
+    </div>
+    <div class="row align-items-center">
+      <div class="col-lg-5 px-5 mx-auto"><img src="img/undraw_medical_3.svg" alt="" class="img-fluid mb-4 mb-lg-0"></div>
+      <div class="col-lg-6"><i class="fa fa-leaf fa-2x mb-3 text-primary"></i>
+        <h2 class="font-weight-light">About Medico</h2>
+        <p class="font-italic text-muted mb-4"> It is a one stop solution for all your healthcare needs starts from fitness to doctor consultation.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="bg-light py-5">
+  <div class="container py-5">
+    <div class="row mb-4">
+      <div class="col-lg-5">
+        <h2 class="display-4 font-weight-light">Our team</h2>
+        
+      </div>
+    </div>
+
+    <div class="row text-center">
+      <!-- Team item-->
+      <div class="col-xl-3 col-sm-6 mb-5">
+        <div class="bg-white rounded shadow-sm py-5 px-4"><img src="https://bootstrapious.com/i/snippets/sn-about/avatar-4.png" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+          <h5 class="mb-0">Nikita</h5><span class="small text-uppercase text-muted">Frontend Developer</span>
+          <ul class="social mb-0 list-inline mt-3">
+            <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-facebook-f"></i></a></li>
+            <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-twitter"></i></a></li>
+            <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-instagram"></i></a></li>
+            <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-linkedin"></i></a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- End-->
+
+      <!-- Team item-->
+      <div class="col-xl-3 col-sm-6 mb-5">
+        <div class="bg-white rounded shadow-sm py-5 px-4"><img src="https://bootstrapious.com/i/snippets/sn-about/avatar-3.png" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+          <h5 class="mb-0">Raghul Baskar</h5><span class="small text-uppercase text-muted">Designer and Developer</span>
+          <ul class="social mb-0 list-inline mt-3">
+            <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-facebook-f"></i></a></li>
+            <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-twitter"></i></a></li>
+            <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-instagram"></i></a></li>
+            <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-linkedin"></i></a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- End-->
+
+      <!-- Team item-->
+      <div class="col-xl-3 col-sm-6 mb-5">
+        <div class="bg-white rounded shadow-sm py-5 px-4"><img src="https://bootstrapious.com/i/snippets/sn-about/avatar-4.png" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+          <h5 class="mb-0">Ayushi</h5><span class="small text-uppercase text-muted">ChatBot Developer</span>
+          <ul class="social mb-0 list-inline mt-3">
+            <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-facebook-f"></i></a></li>
+            <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-twitter"></i></a></li>
+            <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-instagram"></i></a></li>
+            <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-linkedin"></i></a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- End-->
+
+      <!-- Team item-->
+      <div class="col-xl-3 col-sm-6 mb-5">
+        <div class="bg-white rounded shadow-sm py-5 px-4"><img src="https://bootstrapious.com/i/snippets/sn-about/avatar-4.png" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+          <h5 class="mb-0">Manika</h5><span class="small text-uppercase text-muted">Developer</span>
+          <ul class="social mb-0 list-inline mt-3">
+            <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-facebook-f"></i></a></li>
+            <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-twitter"></i></a></li>
+            <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-instagram"></i></a></li>
+            <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-linkedin"></i></a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- End-->
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+        </div>
+
+        <footer class="sticky-footer bg-white">
+          <div class="container my-auto">
+            <div class="copyright text-center my-auto">
+              <span>Copyright &copy; Team : Fuzzy Logic</span>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+
+    <a class="scroll-to-top rounded" href="#page-top">
+      <i class="fas fa-angle-up"></i>
+    </a>
+
+    <div
+      class="modal fade"
+      id="logoutModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+            <button
+              class="close"
+              type="button"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            Select "Logout" below if you are ready to end your current session.
+          </div>
+          <div class="modal-footer">
+            <button
+              class="btn btn-secondary"
+              type="button"
+              data-dismiss="modal"
+            >
+              Cancel
+            </button>
+            <a class="btn btn-primary" href="../index.html">Logout</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="js/sb-admin-2.min.js"></script>
+    <script src="vendor/chart.js/Chart.min.js"></script>
+    <!-- <script src="js/demo/chart-area-demo.js"></script>
+    <script src="js/demo/chart-pie-demo.js"></script> -->
+  </body>
+</html>
