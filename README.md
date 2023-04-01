@@ -4,8 +4,8 @@ Solving for India Hackathon 2023</h1>
 </a>
 * Team members :<a href="https://github.com/manikajain11/">Manika Jain</a>, 
 <a href="https://github.com/digantrastogi/">Digant Rastogi</a>, 
-* <a href="Medico (Team - Fuzzy Logic) HackStack'22.pdf">PPT by Team : Fuzzy Logic</a><br/>
-* <a href="https://drive.google.com/file/d/19GIVHV45HowFkjH4K7eG5JrEI2rxsDGJ/view?usp=sharing">Video Presentation</a>
+* <br><a href="Medico (Team - Fuzzy Logic) HackStack'22.pdf">PPT by Team : Fuzzy Logic</a><br/>
+* <br><a href="https://drive.google.com/file/d/19GIVHV45HowFkjH4K7eG5JrEI2rxsDGJ/view?usp=sharing">Video Presentation</a>
 
 <!-- PROJECT LOGO -->
 <br />
